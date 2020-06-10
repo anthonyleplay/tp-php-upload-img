@@ -15,9 +15,13 @@
 <body>
 
 <header>
-<div id="imgBanniere" class="">
-    <img src="img/bovis-shark.jpg" alt="alien">
-</div>
+    <div id="img-accueil" class="container-fluid">
+        <div class="row justify-content-lg-start justify-content-center text-center">
+            <div class="col-12 justify-content-center text-center">
+                <h1 class="" id="titreHeader">Bovis-Shark</h1>
+            </div>
+        </div>
+    </div>
 </header>
     <!--------------------------------------------------------- ------------------------------------------------------------------->
 

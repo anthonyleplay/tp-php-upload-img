@@ -1,3 +1,21 @@
+#img-accueil {
+    width: 100%;
+    height: 40vh;
+    background-image: url(../img/bovis-shark.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+#titreHeader {
+    font-size: 8rem;
+    padding-top: 6rem;
+    padding-right: 5rem;
+    text-shadow: 0 0 5px rgb(97, 97, 97), 0 0 10px rgb(97, 97, 97), 0 0 15px rgb(97, 97, 97);
+}
+
+
+
 .foot1{
     background-color: #ad926d;
     color: rgb(255, 255, 255);
