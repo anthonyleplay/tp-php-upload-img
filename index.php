@@ -13,7 +13,7 @@
 </head>
 
 <body>
-
+    <!------------------------------------------------- HEADER ------------------------------->
 <header>
     <div id="img-accueil" class="container-fluid">
         <div class="row justify-content-lg-start justify-content-center text-center">
@@ -23,27 +23,39 @@
         </div>
     </div>
 </header>
-    <!--------------------------------------------------------- ------------------------------------------------------------------->
+    <!------------------------------------------------- MAIN ------------------------------->
+<main id="id-main">
+    <div class="container">
+        <div class="row">
+            <div class="row col-12 my-5 shadow" id="id-workarea">
+                <!------------------------------------------------- COL GAUCHE ------------------------------->
+                <div class="col-6 border my-5">
+                    <h1>zone 1</h1>
 
-
-
-    <!--------------------------------------------------------- ------------------------------------------------------------------->
-
-
-
-    <!--------------------------------------------------------- ------------------------------------------------------------------->
-    <footer>
-        <div class="container-fluid">
-            <div class="row justify-content-center text-center">
-                <div class="col-12 foot1">
-                    <span>test123test</span>
                 </div>
-                <div class="col-12 foot2">
-                    <span>@copiright bla bla</span>
+                <!------------------------------------------------- COL DROITE ------------------------------->
+                <div class="col-6 border my-5">
+                    <h1>zone 2</h1>
+
                 </div>
+
             </div>
         </div>
-    </footer>
+    </div>
+</main>
+    <!------------------------------------------------- FOOTER ------------------------------->
+<footer>
+    <div class="container-fluid">
+        <div class="row justify-content-center text-center">
+            <div class="col-12 foot1">
+                    <span>test123test</span>
+            </div>
+            <div class="col-12 foot2">
+                    <span>@copiright bla bla</span>
+            </div>
+        </div>
+    </div>
+</footer>
 
 
 
