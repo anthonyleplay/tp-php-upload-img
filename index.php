@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="assets\style.css" rel="stylesheet" type="text/css">
+    <link href="img\icon.png" rel="icon">
 
     <title>tp upload</title>
 </head>
@@ -27,7 +28,18 @@
 
 
     <!--------------------------------------------------------- ------------------------------------------------------------------->
-
+    <footer>
+        <div class="container-fluid">
+            <div class="row justify-content-center text-center">
+                <div class="col-12 foot1">
+                    <span>test123test</span>
+                </div>
+                <div class="col-12 foot2">
+                    <span>@copiright bla bla</span>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
