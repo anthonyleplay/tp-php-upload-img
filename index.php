@@ -12,8 +12,12 @@
 </head>
 
 <body>
-    <h1>tp upload</h1>
 
+<header>
+<div id="imgBanniere" class="">
+    <img src="img/bovis-shark.jpg" alt="alien">
+</div>
+</header>
     <!--------------------------------------------------------- ------------------------------------------------------------------->
 
 
