@@ -10,6 +10,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $filename = $_FILES["photo"]["name"];
         $filetype = $_FILES["photo"]["type"];
         $filesize = $_FILES["photo"]["size"];
+        $filetmpname = $_FILES["photo"]["tmp_name"];
+        $filemime = mime_content_type ( $filetmpname );
+        var_dump(in_array($filemime, $allowed));
 
         // Recuperation de l'extension du fichier
 
@@ -21,11 +24,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $maxsize = 1 * 1024 * 1024;
             if ($filesize < $maxsize) {
                 // Vérifie le type MIME du fichier
-                if (in_array($_FILES["photo"]["type"], $allowed)) {
+                if (in_array($filemime, $allowed)) {
                     // on change le nom du fichier avant de le télécharger.
                     $_FILES["photo"]["name"] = md5(uniqid()) . '.' . $ext;
                     move_uploaded_file($_FILES["photo"]["tmp_name"], "upload/" . $_FILES["photo"]["name"]);
-                    $message = "Votre image a été téléchargé avec succès.";
+                    $message = "Votre image a été téléchargé avec succès.<br>
+                    <a href=" . "upload/" . $_FILES["photo"]["name"] . " target=\"_blank\"><button type=\"button\">lien vers l'image</button></a>";
 
                 } else {
                     $message = "Error: Il y a eu un problème de téléchargement de votre fichier. Veuillez réessayer.";
@@ -76,14 +80,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <main id="id-main">
         <div class="container">
             <div class="row">
-                <div class="row col-12 my-5 shadow" id="id-workarea">
+                <div class="row col-12 my-5 shadow justify-content-center" id="id-workarea">
                     <!------------------------------------------------- COL GAUCHE ------------------------------->
-                    <div class="col-6 border my-5">
+                    <div class="col-10 col-md-6 border py-2 my-5">
                         <div>
                             <img class="preview" />
                         </div>
                         <form action="index.php" method="post" enctype="multipart/form-data">
-                            <h2>Upload Fichier</h2>
+                            <h2 class="typo-specialelite">Envoyer votre image.</h2>
                             <label for="fileUpload">Fichier:</label>
                             <input type="file" data-preview=".preview" name="photo" id="fileUpload"><br>
                             <input type="submit" name="submit" value="Upload">
@@ -95,7 +99,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div>
 
                     <!------------------------------------------------- COL DROITE ------------------------------->
-                    <div class="col-6 my-5">
+                    <div class="col-10 col-md-6 my-5">
                         <img src="img\cover-crop-circle.jpg" alt="cover-crop-circle-Astronogeek" width="100%">
                     </div>
 
@@ -107,11 +111,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <footer>
         <div class="container-fluid">
             <div class="row justify-content-center text-center">
-                <div class="col-12 foot1">
-                    <span>test123test</span>
-                </div>
-                <div class="col-12 foot2">
-                    <span>@copiright bla bla</span>
+                <div class="col-12 foot py-3">
+                    <span>@copiright Yves-Marie Drouard && Anthony Le Play</span>
                 </div>
             </div>
         </div>
