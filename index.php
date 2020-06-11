@@ -150,21 +150,10 @@ if(!empty($_POST))
                             }
                         ?>
                     </div>
-
-<<<<<<< HEAD
                 </div>
                 <!------------------------------------------------- COL DROITE ------------------------------->
                 <div class="col-6 my-5">
                     <img src="img\cover-crop-circle.jpg" alt="cover-crop-circle-Astronogeek" width="100%">
-                </div>
-=======
-                    <!------------------------------------------------- COL DROITE ------------------------------->
-                    <div class="col-6 border my-5">
-                        <h1>zone 2</h1>
-
-                    </div>
->>>>>>> 12892bbb150d3ac2c8e2c433cdb0f0d618295a28
-
                 </div>
             </div>
         </div>
