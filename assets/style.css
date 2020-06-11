@@ -1,18 +1,20 @@
 #img-accueil {
     width: 100%;
-    height: 40vh;
+    height: 30vh;
     background-image: url(../img/bovis-shark.jpg);
     background-attachment: fixed;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: auto;
 }
 #titreHeader {
-    font-size: 8rem;
-    padding-top: 6rem;
-    padding-right: 5rem;
+    font-size: 5rem;
+    padding-top: 2rem;
     color: chartreuse;
     text-shadow: 0 0 5px rgb(151, 228, 75), 0 0 10px rgb(82, 134, 30), 0 0 15px rgb(50, 85, 15);
+}
+.typo-specialelite{
+    font-family: 'Special Elite', cursive;
 }
 #id-main{
     background: rgb(4,22,36);
@@ -22,8 +24,11 @@
     background: rgb(75,113,142);
     background: linear-gradient(90deg, rgba(75,113,142,1) 0%, rgba(114,166,207,1) 50%, rgba(75,113,142,1) 100%);
 }
-
-
+.preview {
+    width: 200px; 
+    max-height: 200px;
+    display: block;
+}
 .foot1{
     background-color: #ad926d;
     color: rgb(255, 255, 255);

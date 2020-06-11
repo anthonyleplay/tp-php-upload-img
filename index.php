@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="assets\style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet"> 
     <link href="img\icon.png" rel="icon">
 
     <title>tp upload</title>
@@ -18,7 +19,7 @@
     <div id="img-accueil" class="container-fluid">
         <div class="row justify-content-lg-start justify-content-center text-center">
             <div class="col-12 justify-content-center text-center">
-                <h1 class="" id="titreHeader">Bovis-Shark</h1>
+                <h1 class="typo-specialelite" id="titreHeader">Bovis-Shark</h1>
             </div>
         </div>
     </div>
