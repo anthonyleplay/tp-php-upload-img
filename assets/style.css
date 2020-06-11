@@ -30,11 +30,11 @@
     display: block;
 }
 .foot1{
-    background-color: #ad926d;
-    color: rgb(255, 255, 255);
+    background: rgb(75,113,142);
+    background: linear-gradient(90deg, rgba(75,113,142,1) 0%, rgba(114,166,207,1) 50%, rgba(75,113,142,1) 100%);
 
 }
 .foot2{
-    background-color: #453015;
-    color: rgb(255, 255, 255);
+    background: rgb(75,113,142);
+    background: linear-gradient(90deg, rgba(75,113,142,1) 0%, rgba(114,166,207,1) 50%, rgba(75,113,142,1) 100%);
 }

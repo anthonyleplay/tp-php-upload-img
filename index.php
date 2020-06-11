@@ -85,7 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <input type="file" data-preview=".preview" name="photo" id="fileUpload"><br>
                             <input type="submit" name="submit" value="Upload">
                             <p><strong>Note:</strong> Seuls les formats .jpg, .jpeg, .jpeg, .gif, .png sont autorisés jusqu'à une
-                                taille maximale de 5 Mo.</p>
+                                taille maximale de 1 Mo.</p>
                         </form>
                         <p><b><?= $message ?></b></p>
                         <a href="index.php" style="background-color: red;">reset</a>
