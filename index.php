@@ -129,6 +129,9 @@ if(!empty($_POST))
                 <div class="row col-12 my-5 shadow" id="id-workarea">
                     <!------------------------------------------------- COL GAUCHE ------------------------------->
                     <div class="col-6 border my-5">
+                      <div>
+                        <img class="preview" />
+                      </div>
                         <form enctype="multipart/form-data"
                             action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
                             <fieldset>
