@@ -1,5 +1,7 @@
 <?php
 $message = "";
+
+
 // Vérifier si le formulaire a été soumis
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Vérifie si le fichier a été uploadé sans erreur.
@@ -19,11 +21,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $maxsize = 1 * 1024 * 1024;
             if ($filesize < $maxsize) {
                 // Vérifie le type MIME du fichier
-                if (in_array($filetype, $allowed)) {
+                if (in_array($_FILES["photo"]["type"], $allowed)) {
                     // on change le nom du fichier avant de le télécharger.
                     $_FILES["photo"]["name"] = md5(uniqid()) . '.' . $ext;
                     move_uploaded_file($_FILES["photo"]["tmp_name"], "upload/" . $_FILES["photo"]["name"]);
-                    $message = "Votre fichier a été téléchargé avec succès.";
+                    $message = "Votre image a été téléchargé avec succès.";
+
                 } else {
                     $message = "Error: Il y a eu un problème de téléchargement de votre fichier. Veuillez réessayer.";
                 }
@@ -85,9 +88,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <input type="file" data-preview=".preview" name="photo" id="fileUpload"><br>
                             <input type="submit" name="submit" value="Upload">
                             <p><strong>Note:</strong> Seuls les formats .jpg, .jpeg, .jpeg, .gif, .png sont autorisés jusqu'à une
-                                taille maximale de 5 Mo.</p>
+                                taille maximale de 1 Mo.</p>
                         </form>
-                        <p><b><?= $message ?></b></p>
+                        <p id="messageresult"><b><?= $message ?></b></p>
                         <a href="index.php" style="background-color: red;">reset</a>
                     </div>
 

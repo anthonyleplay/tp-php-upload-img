@@ -14,4 +14,4 @@ $(function() {
 			$(input.data('preview')).attr('src', oFREvent.target.result);
 		};
 	});
-})
+});
