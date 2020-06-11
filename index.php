@@ -151,12 +151,12 @@ if(!empty($_POST))
                         ?>
                     </div>
 
+                    <!------------------------------------------------- COL DROITE ------------------------------->
+                    <div class="col-6 my-5">
+                        <img src="img\cover-crop-circle.jpg" alt="cover-crop-circle-Astronogeek" width="100%">
+                    </div>
+                    
                 </div>
-                <!------------------------------------------------- COL DROITE ------------------------------->
-                <div class="col-6 my-5">
-                    <img src="img\cover-crop-circle.jpg" alt="cover-crop-circle-Astronogeek" width="100%">
-                </div>
-
             </div>
         </div>
     </main>
