@@ -35,9 +35,8 @@
 
                 </div>
                 <!------------------------------------------------- COL DROITE ------------------------------->
-                <div class="col-6 border my-5">
-                    <h1>zone 2</h1>
-
+                <div class="col-6 my-5">
+                    <img src="img\cover-crop-circle.jpg" alt="cover-crop-circle-Astronogeek" width="100%">
                 </div>
 
             </div>
