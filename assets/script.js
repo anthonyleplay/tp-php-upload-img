@@ -15,3 +15,7 @@ $(function () {
 		};
 	});
 });
+function playsound(){
+	sound = new Audio("assets/x-files.wav");
+    sound.play();
+};

@@ -41,7 +41,15 @@
 }
 
 #uploadImput {
-    width: 6rem;
-    height: 3rem;
+    padding: 1rem;
     border-radius: 8px;
+    border: solid 2px rgb(82, 134, 30);
+    background-color: chartreuse;
+}
+
+.btn-linkimg{
+    padding: 1rem;
+    border-radius: 8px;
+    border: solid 2px rgb(82, 134, 30);
+    background-color: chartreuse;
 }
