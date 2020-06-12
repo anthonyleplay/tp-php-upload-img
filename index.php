@@ -27,17 +27,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 if (in_array($filemime, $allowed)) {
 
                     // on change le nom du fichier avant de le télécharger.
-                    $_FILES["photo"]["name"] = md5(uniqid()) . '.' . $ext;
-                    move_uploaded_file($_FILES["photo"]["tmp_name"], "upload/" . $_FILES["photo"]["name"]);
+                    $filename = md5(uniqid()) . '.' . $ext;
+                    move_uploaded_file($filetmpname, "upload/" . $filename);
                     $message = "Votre image a été téléchargé avec succès.<br><br>
-                    <a href=" . "upload/" . $_FILES["photo"]["name"] . " target=\"_blank\">
+                    <a href=" . "upload/" . $filename . " target=\"_blank\">
                         <button onclick=\"playsound()\" class=\"typo-specialelite btn-linkimg\"type=\"button\">lien vers l'image</button>
                     </a>";
                 } else {
                     $message = "Erreur: Il y a eu un problème de téléchargement de votre fichier. Veuillez réessayer.";
                 }
             }else {
-                $message = "Erreur: La taille du fichier est supérieure à la limite autorisée.";
+                $message = "Erreur: La taille du fichier est supérieure à 1Mo ( il fait : " . $filesize / (1024 * 1024) . " Mo)";
             }          
         }else {
             $message = "Erreur: Veuillez sélectionner un format de fichier valide.";
